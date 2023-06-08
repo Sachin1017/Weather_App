@@ -28,7 +28,7 @@ export function ForecastProvider({children}) {
           `http://api.weatherapi.com/v1/forecast.json?key=0a0b7b8b09f74885947110201230506&q=${text}&days=7&aqi=no&alerts=no`,
         );
         const json = await response.json();
-        if (json !== undefined) {
+        if (response.status === 200) {
           setCity(text);
           setData(json);
           DateConverter(json.location.localtime);

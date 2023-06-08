@@ -45,7 +45,7 @@ export default Forecast;
 const styles = StyleSheet.create({
   container: {
     width: '100%',
-    height: '28%',
+    height: '25%',
     display: 'flex',
     alignItems: 'center',
     gap: 40,
